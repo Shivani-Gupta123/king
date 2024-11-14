@@ -39,6 +39,30 @@ h1 {
     margin: 10px 0;
 }
 
+.gradient-effect {
+    font-size: 2em;
+    font-weight: bold;
+    color: rgb(10, 10, 10); /* Set the text color to yellow */
+    position: relative;
+    display: inline-block;
+    background: linear-gradient(90deg, rgb(252, 236, 17), rgb(50, 51, 47), rgb(223, 242, 15)); /* Black gradient */
+    background-size: 200%; /* Make the gradient twice as wide as the text */
+    -webkit-background-clip: text; /* Apply gradient only to the text */
+    -webkit-text-fill-color: transparent; /* Make the text transparent so the gradient shows */
+    animation: colorMove 3s linear infinite; /* Animate the gradient movement */
+}
+
+@keyframes colorMove {
+    0% {
+        background-position: 0%; /* Start the gradient from the left */
+    }
+    100% {
+        background-position: 100%; /* End the gradient on the right */
+    }
+}
+
+
+
 .timer {
     display: flex;
     justify-content: center;
