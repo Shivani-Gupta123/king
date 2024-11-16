@@ -23,7 +23,7 @@
 
 
     const targetCount = 500000; // Target subscriber count
-  const duration = 3000; // Duration of the counting effect in milliseconds (e.g., 3 seconds)
+  const duration = 7000; // Duration of the counting effect in milliseconds (e.g., 3 seconds)
   const displayElement = document.getElementById('subscriber-count');
   
   let startTimestamp = null;

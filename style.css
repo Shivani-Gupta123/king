@@ -13,7 +13,7 @@ body, html {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh;
+    height: 890px;
     background: url('./images/all\ rounder.jpg') no-repeat center center/cover;
     background-size: cover;
     color: #fff;
@@ -22,44 +22,47 @@ body, html {
 
 .content {
     background: rgba(0, 0, 0, 0.6); /* Dark overlay for better text readability */
-    padding: 10px;
+    padding: 50px;
     border-radius: 5px;
-    width: 80%;
+    width: 90%;
     max-width: 400px;
+    height: auto;
 }
 
-h2 {
-    font-size: 50px;
+.content h1 {
+    font-size: 25px;
     color: #ccc;
 }
 
-h1 {
-    font-size: 40px;
+.content h2 {
+    font-size: 33px;
     color: #e5ed00;
     margin: 10px 0;
 }
 
-.gradient-effect {
-    font-size: 2em;
+.light-effect {
+    font-size: 3em;
     font-weight: bold;
-    color: rgb(10, 10, 10); /* Set the text color to yellow */
+    color: #f01212; /* Base text color */
     position: relative;
     display: inline-block;
-    background: linear-gradient(90deg, rgb(252, 236, 17), rgb(50, 51, 47), rgb(223, 242, 15)); /* Black gradient */
-    background-size: 200%; /* Make the gradient twice as wide as the text */
-    -webkit-background-clip: text; /* Apply gradient only to the text */
-    -webkit-text-fill-color: transparent; /* Make the text transparent so the gradient shows */
-    animation: colorMove 3s linear infinite; /* Animate the gradient movement */
+    background: linear-gradient(90deg, transparent, rgba(239, 235, 15, 0.8), transparent);
+    background-size: 200%; /* Twice the size of the text for smooth animation */
+    background-clip: text; /* Clip the background to the text */
+    -webkit-background-clip: text; /* For webkit-based browsers */
+    -webkit-text-fill-color: transparent; /* Make the text transparent to show the background */
+    animation: lightMove 3s linear infinite; /* Infinite animation */
 }
 
-@keyframes colorMove {
+@keyframes lightMove {
     0% {
-        background-position: 0%; /* Start the gradient from the left */
+        background-position: 0%;
     }
     100% {
-        background-position: 100%; /* End the gradient on the right */
+        background-position: 100%;
     }
 }
+
 
 
 
@@ -135,7 +138,7 @@ ul li {
     margin: 5px;
     gap: 25px;
     padding: 15px 25px;
-    font-size: 40px;
+    font-size: 20px;
     font-weight: bold;
     color: #fff;
     background-color: #00bfff;
@@ -147,7 +150,7 @@ ul li {
 }
 
 .join-btn i {
-    font-size: 60px;
+    font-size: 40px;
 }
 
 /* Blinking animation */
